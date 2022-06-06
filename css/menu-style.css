@@ -13,12 +13,13 @@
 }
 
 body {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     max-height: 100vh;
     color: white;
     font-family: 'Arimo', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
