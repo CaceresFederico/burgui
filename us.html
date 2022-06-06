@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Federico Cáceres">
+    <meta name="copyright" content="Federico Cáceres front-end, Dennis Carmona diseño">
+    <meta name="keywords"
+        content="leburguer, leburguer web site, leburguer comprar, leburguer locales, leburguer sucursales, hamburgueseria">
+    <meta name="description" content="Gotcha, comunidad de usuarios que aman a los animales">
+    <!-- Robots Google -->
+    <meta name="robots" content="index follow">
+    <!-- Facebook meta -->
+    <meta name="og:url" content="#">
+    <meta property="og:type" content="web-site" />
+    <meta property="og:title" content="Descubre leburguer" />
+    <meta property="og:description" content="Tentate con nuestras hamburguesas" />
+    <meta property="og:image" content=" " />
+    <!-- Twitter meta -->
+    <meta name="twitter:url" content="#">
+    <meta property="twitter:type" content="web-site" />
+    <meta property="twitter:title" content="Descubre leburguer" />
+    <meta property="twitter:description" content="Tentate con nuestras hamburguesas" />
+    <!-- BOOTSTRAP CSS 5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/us-style.css">
+    <title>Le Burgui</title>
+</head>
+
+<body>
+    <nav>
+        <div id="navbar">
+            <div class="container">
+                <div class="brand-container">
+                    <a href="index.html"><img src="./resources/burgui-brand.png" id="brand-img" alt=""></a>
+                </div>
+                <ul id="menu-content">
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="index.html#found-us-anchor">sucursales</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="us.html">nosotros</a></li>
+                </ul>
+                <ion-icon name="grid-outline" id="menu-icon" onclick="show(menuContent)"></ion-icon>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- NOSOTROS -->
+        <section id="us">
+            <div id="us-landing" class="row">
+                <div id="us-img-container" class="d-flex justify-content-center align-items-center">
+                    <div>
+                        <h2>burguis</h2>
+                        <h4>Dejate llevar por el sabor</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="who-we-are" class="row">
+                <div class="col-6">
+                    <div class="us-text">
+                        <h4>quienes somos</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, adipisci? Nesciunt
+                            quisquam sequi similique quo nisi, laudantium alias facilis. Officiis praesentium sequi
+                            reiciendis. Nulla, quibusdam consectetur voluptatem explicabo id molestiae!</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="./resources/nosotros/QuienesS.jpg" alt="hamburguesa quienes somos" class="us-img">
+                </div>
+            </div>
+
+            <div id="our-team" class="row">
+                <div class="col-6">
+                    <img src="./resources/nosotros/NuestroE.jpg" alt="hamburguesa nuestro equipo" class="us-img">
+                </div>
+                <div class="col-6">
+                    <div class="us-text">
+                        <h4>nuestro equipo</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, adipisci? Nesciunt
+                            quisquam sequi similique quo nisi, laudantium alias facilis. Officiis praesentium sequi
+                            reiciendis. Nulla, quibusdam consectetur voluptatem explicabo id molestiae!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="social-media">
+            <div class="row">
+                <div class="col-3 col-sm-4">
+                    <ul>
+                        <li>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <a href="#">devoto</a>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <a href="#">la paternal</a>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <a href="#">palermo</a>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <a href="#">belgrano</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 d-flex justify-content-center align-items-center">
+                    <img src="./resources/burgui-footer.png" alt="" id="brand-footer">
+                </div>
+                <div class="col-3 col-sm-4">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            <div class="row">
+                <span>Copyright © 2022. Todos los derechos reservados.
+                    Diseño: Denis Carmona | Desarrollo: Federico Cáceres.</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- IONICONS 5.52 -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- BOOTSTRAP SEPARATE 5.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

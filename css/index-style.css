@@ -1,0 +1,666 @@
+/* MONTSERRAT REGULAR-MEDIUM-BOLD, ARIMO REGULAR-BOLD, ANTON REGULAR, Vujahday Script, freedoka one*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@400;700&family=Asap:wght@500&family=Montserrat:wght@400;500;700&family=Vujahday+Script&display=swap');
+
+*,
+ul {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --amarillo: #F2CB05;
+    --negro: #1D1D1D;
+}
+body {
+    min-width: 100vw;
+    max-width: 100vw;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    overflow-x: hidden;
+}
+/* BOOTSTRAP FORMAT */
+.row,
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+}
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+section {
+    position: relative;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+button {
+    color: var(--negro);
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 4%;
+    min-width: 150px;
+    max-width: 150px;
+    background-color: var(--amarillo) !important;
+}
+
+/* NAV */
+#menu-icon {
+    display: none;
+}
+nav {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--negro);
+}
+#navbar {
+    position: fixed;
+    z-index: 9999;
+    background-color: var(--negro);
+    min-width: 100vw;
+    max-width: 100vw;
+    text-transform: uppercase;
+}
+#navbar>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 80vw;
+    max-width: 80vw;
+    min-height: 10vh;
+    max-height: 10vh;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+    margin: 0px;
+}
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 40px;
+    font-weight: bold;
+}
+nav ul li:last-child {
+    padding-right: 0px;
+}
+
+#menu-content a {
+    color: white;
+}
+#menu-content a:hover {
+    color: var(--amarillo);
+}
+#brand-img {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+/* CAROUSEL */
+.carousel-item {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.carousel-text {
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 10%;
+    max-width: 40%;
+}
+.carousel-inner>.carousel-item:nth-child(1) {
+    background-image: url(../resources/inicio/landing-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carousel-item:nth-child(2) {
+    background-image: url(../resources/inicio/landing-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carousel-item:nth-child(3) {
+    background-image: url(../resources/inicio/landing-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* LANDING SECTION */
+#landing-page h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+}
+#landing-page p {
+    padding-top: 2%;
+    text-align: center;
+    font-size: 24px;
+}
+#landing-page h2:first-child {
+    margin: 0px auto;
+    text-align: center;
+    max-width: 90%;
+    font-size: 57px;
+}
+
+/* ARRIVE SECTION */
+#arrive {
+    color: var(--negro);
+    text-align: center;
+}
+#arrive .arrive-text {
+    margin: 0px auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    min-width: 60%;
+    max-width: 60%;
+}
+#arrive h4 {
+    font-size: 33px;
+    color: var(--negro);
+    font-weight: 700;
+}
+#arrive p {
+    font-weight: 400;
+    max-width: 80%;
+    margin: 0px auto;
+    padding: 4% 0px;
+    font-size: 16px;
+}
+#arrive>.container {
+    padding: 0px;
+    min-width: 80%;
+    max-width: 80%;
+}
+#arrive .container button {
+    font-size: 12px;
+}
+
+/* FOUND US SECTION */
+#found-us {
+    position: relative;
+    color: WHITE;
+}
+#found-us button {
+    min-width: 250px;
+}
+#found-us>.container {
+    min-width: 50vw;
+    max-width: 50vw;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+#found-us-data {
+    display: none;
+}
+#found-us-anchor {
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 10vh;
+    max-height: 10vh;
+}
+
+/* SUCURSALES */
+.sucursales-container-img {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#found-us-data .texto {
+    display: flex;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    cursor: pointer;
+    margin: 0px;
+    min-width: 25%;
+    max-width: 25%;
+}
+.img-locales {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 40vh;
+    max-height: 40vh;
+    object-fit: cover;
+}
+
+/* COMENTS */
+#coments {
+    display: flex;
+    align-items: center;
+    background-image: url('../resources/inicio/clientes.png');
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 50vh;
+}
+#coments .coments-data {
+    margin: 0px auto;
+    min-width: 80%;
+    max-width: 80%;
+    margin-top: 10vh;
+}
+#coments .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+.comentBody>p {
+    margin: 0px auto;
+    width: 90%;
+    text-align: center;
+    padding-top: 10%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+.comentBody>.container>p {
+    font-size: 18px;
+    padding-top: 5%;
+    color: var(--amarillo);
+    text-transform: capitalize;
+    text-align: right;
+    font-weight: bold;
+}
+#coments h4 {
+    font-size: 34px;
+    color: var(--negro);
+    padding: 3% 0px;
+    margin-bottom: 5vh;
+}
+#coments>.row {
+    min-width: 100%;
+    max-width: 100%;
+}
+#coments>.row:first-child {
+    margin: 0px auto;
+    min-width: 80%;
+    max-width: 80%;
+}
+.comentBody {
+    min-width: 90%;
+    max-width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #1D1D1D;
+}
+
+/* UTILS */
+.line {
+    text-align: center;
+    width: 200px;
+    margin: 0px auto;
+    border-bottom: 4px solid white;
+    padding: 20px 0px;
+}
+
+/* CARDS */
+.card-body {
+    min-width: 95%;
+    max-width: 95%;
+    border-radius: 15px;
+    background-color: var(--negro);
+    padding: 0px;
+    margin-bottom: 2rem;
+}
+.card-body button {
+    background-color: var(--amarillo);
+    height: 50px;
+    width: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.card-body button a {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--negro);
+}
+.card-img {
+    background-position: center;
+    object-fit: cover;
+    min-height: 30vh;
+    max-height: 30vh;
+    padding: 0px !important;
+}
+.card-img-container {
+    border-radius: 15px 15px 0px 0px;
+}
+.card-img-container img {
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid var(--amarillo);
+}
+.card-text {
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.card-text>h3 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    color: var(--amarillo);
+    text-transform: uppercase;
+}
+.card-text>p {
+    color: white;
+    font-size: 12px;
+    margin: 0px;
+    max-width: 80%;
+}
+
+/* BANNER #BEST BURGER */
+#bestBurgerContainer h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 160px;
+    font-family: 'Vujahday Script', cursive;
+    margin: 0px;
+    text-align: center;
+    color: var(--amarillo);
+}
+#bestBurgerContainer .container {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../resources/inicio/footer-img.jpg);
+    min-height: 60vh;
+    max-height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    min-width: 100vw;
+    max-width: 100vw;
+    background-color: var(--amarillo);
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+.social-media .row:first-child {
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 20vh;
+    max-height: 20vh;
+}
+#brand-footer {
+    height: 50px;
+    margin: 0px auto;
+}
+footer li {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 5px;
+}
+footer li a:link,
+footer li a:visited,
+footer li a:hover {
+    color: var(--negro);
+    text-decoration: none;
+    padding-left: 6px;
+}
+footer li ion-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--negro);
+}
+footer .col-3:first-child {
+    display: flex;
+    align-items: center;
+}
+footer .col-3:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer .col-3:last-child ion-icon {
+    display: flex;
+    font-size: 30px;
+    padding-bottom: 2%;
+    cursor: pointer;
+    color: var(--negro);
+}
+.copy-right {
+    min-width: 100vw;
+    max-width: 100vw;
+    color: white;
+    background-color: var(--negro);
+}
+.copy-right .row {
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+}
+.copy-right span {
+    text-align: center;
+    margin: 0px;
+    font-size: 16px;
+}
+
+/* TABLET RESOLUTION */
+@media (min-width:792px) and (max-width:1365px) {
+    /* NAV */
+    #menu-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+    #navbar ul li {
+        display: inline-flex;
+        list-style: none;
+        font-weight: bold;
+        padding: 0px 25px;
+    }
+    #navbar ul li:last-child {
+        padding-right: 0px;
+    }
+    #navbar ul li a {
+        color: white;
+    }
+    #menu-icon {
+        display: none;
+    }
+    .carousel-text{
+        margin-top: 20vh;
+    }
+    /* ARRIVE */
+    .arrite-text {
+        max-width: 100%;
+    }
+    .arrive-text h4 {
+        font-weight: bold;
+    }
+    .card-img {
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    /* COMENTS */
+    #coments h4 {
+        font-weight: 700;
+        padding: 3% 0px;
+        margin-bottom: 5vh;
+    }
+    .comentBody {
+        margin: 0px auto;
+        margin-bottom: 8%;
+    }
+    .comentBody p {
+        font-size: 16px;
+        padding-top: 6%;
+    }
+
+}
+
+
+/* MEDIUM (*MD*) RESOLUTION */
+@media (min-width:420px) and (max-width:791px) {
+    /* NAV */
+    #menu-icon {
+        display: flex;
+        font-size: 34px;
+    }
+    #menu-content {
+        min-width: 100vw;
+    }
+    #navbar ul {
+        display: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        left: 0px;
+        top: 10vh;
+        position: absolute;
+        background-color: var(--negro);
+        min-height: 10vh;
+        max-height: 10vh;
+        transition: all 0.5s ease 0s;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        padding: 0px;
+        /* padding-top: 5vh; */
+    }
+
+    .carousel-text {
+        max-width: 60%;
+    }
+
+    .arrive-text {
+        max-width: 100%;
+    }
+
+    #landing-page h2:first-child {
+        margin: 0px auto;
+        text-align: center;
+        padding-top: 15vh;
+        max-width: 90%;
+        font-size: 50px;
+    }
+
+    p {
+        /* min-width: 100%; */
+        text-align: center;
+        margin: 0px auto;
+        font-size: 23.4px;
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: 23px;
+        vertical-align: baseline;
+        margin: 0px;
+    }
+
+    #found-us button {
+        min-width: 300px;
+    }
+
+    #found-us-data .texto {
+        max-width: 50%;
+        font-size: 3.5rem;
+    }
+
+    /* COMENTS */
+    #coments h4 {
+        font-weight: 700;
+        padding-top: 2%
+    }
+
+    .comentBody {
+        margin: 0px auto;
+        margin-bottom: 8%;
+    }
+
+    .comentBody p {
+        font-size: 16px;
+        padding-top: 6%;
+    }
+
+    .sucursales-container-img p {
+        position: relative;
+        display: flex;
+    }
+
+    #bestBurgerContainer h2 {
+        font-size: 8rem;
+    }
+
+    /* FOOTER MD RESOLUTION */
+    footer ul {
+        font-size: 10px;
+    }
+
+    footer ul li ion-icon {
+        font-size: 18px;
+    }
+
+    #brand-footer {
+        height: 20%;
+    }
+
+    footer ul li a {
+        font-size: 12px;
+    }
+
+    footer .col-3:last-child {
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+
+    footer .col-3:last-child ion-icon {
+        font-size: 26px;
+    }
+
+    .copy-right span {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/* SMALL (*SM*) RESOLUTION */
+@media (max-width:419px) {
+    .arrite-text p {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
