@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<!-- TO DO -->
-<!-- 
-    1- Transision en el texto de las sucursales.
-    2- Fixear links dentro de la página. ✔
-    3- Aplicar mismos estilos del navbar para todas las paginas. ✔
-    4- Menu responsive. ✔
-    5- fix cards aligment in responsive mode & coments aligment ✔
-    6- fix menu-content hide when click on menu icon. ✔
-    more important : 4-6-5-3
--->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,28 +22,45 @@
     <meta property="twitter:type" content="web-site" />
     <meta property="twitter:title" content="Descubre leburguer" />
     <meta property="twitter:description" content="Tentate con nuestras hamburguesas" />
+    <!--MONTSERRAT REGULAR-MEDIUM-BOLD, ARIMO REGULAR-BOLD, ANTON REGULAR, Vujahday, RAJDHANI BOLD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Montserrat:wght@400;500;700&family=Rajdhani:wght@700&family=Vujahday+Script&display=swap"
+        rel="stylesheet">
     <!-- BOOTSTRAP CSS 5.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index-style.css">
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
     <title>Le Burgui</title>
 </head>
-
 <body>
-    <nav>
+
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
         <div id="navbar">
             <div class="container">
                 <div class="brand-container">
                     <a href="index.html"><img src="./resources/burgui-brand.png" id="brand-img" alt=""></a>
                 </div>
                 <ul id="menu-content">
-                    <li><a href="index.html">inicio</a></li>
-                    <li><a href="index.html#found-us-anchor">sucursales</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="us.html">nosotros</a></li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#found-us-anchor" class="nav-link">sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="us.html" class="nav-link">nosotros</a>
+                    </li>
                 </ul>
-                <ion-icon name="grid-outline" id="menu-icon" onclick="show(menuContent)"></ion-icon>
+                <ion-icon name="menu-outline" id="menu-icon" onclick="show(menuContent)"></ion-icon>
             </div>
         </div>
     </nav>
@@ -63,28 +68,31 @@
 
     <!-- CAROUSEL LANDING PAGE -->
     <section id="landing-page">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide ride" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="carousel-text">
-                        <h2>la pedis, la tenes!</h2>
-                        <div class="line"></div>
-                        <p>Hamburguesas caseras desde 1994.</p>
+                    <div class="landing-page-header">
+                        <h2>! La pedis, la tenes !</h2>
+                        <span class="line"></span>
+                        <p>Hamburguesas caseras desde 1994</p>
                     </div>
+                    <img src="./resources/inicio/landing-1.jpg" class="carousel-img" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-text">
-                        <h2>la pedis, la tenes! </h2>
-                        <div class="line"></div>
-                        <p>Hamburguesas caseras desde 1994.</p>
+                    <div class="landing-page-header">
+                        <h2>! La pedis, la tenes !</h2>
+                        <span class="line"></span>
+                        <p>Hamburguesas caseras desde 1994</p>
                     </div>
+                    <img src="./resources/inicio/landing-2.jpg" class="carousel-img" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-text">
-                        <h2>la pedis, la tenes! </h2>
-                        <div class="line"></div>
-                        <p>Hamburguesas caseras desde 1994.</p>
+                    <div class="landing-page-header">
+                        <h2>! La pedis, la tenes !</h2>
+                        <span class="line"></span>
+                        <p>Hamburguesas caseras desde 1994</p>
                     </div>
+                    <img src="./resources/inicio/landing-3.jpg" class="carousel-img" alt="...">
                 </div>
             </div>
         </div>
@@ -93,7 +101,7 @@
 
     <!-- ARRIVE SECTION -->
     <section id="arrive">
-        <div class="arrive-text">
+        <div class="arrive-text-container">
             <h4>le burgui has arrive</h4>
             <p>Te presentamos las Burgi. Hamburguesas hecha 100% por nosotros, con recetas originales y preservando
                 la
@@ -102,7 +110,7 @@
                 con aderezos como con diferentes tipos de panes, todo totalmente casero.
             </p>
         </div>
-        <div class="container">
+        <div class="cards-container">
             <div class="row d-flex justify-content-center">
                 <div class="col col-12 col-md-6 col-lg-4">
                     <div class="card-body">
@@ -111,9 +119,21 @@
                         </div>
                         <div class="card-text">
                             <h3>hamburguesas clásicas</h3>
-                            <p>Carne 100 gramos, lechuga romana, tomate, cebolla asada, morron asado, cheddar</p>
+                            <div class="badge-container">
+                                <span class="badge">Doble Carne</span>
+                                <span class="badge">Tomate</span>
+                                <span class="badge">Lechuga</span>
+                                <span class="badge">Cebolla</span>
+                                <span class="badge">Cheddar</span>
+                                <span class="badge">Pepinillos</span>
+                                <span class="badge">Salsa tasty</span>
+                            </div>
                         </div>
-                        <button><a href="menu.html">ver mas</a></button>
+                        <div class="btn-container">
+                            <button class="btn-style">
+                                <a href="menu.html" class="btn-link">Ver mas</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col col-12 col-md-6 col-lg-4">
@@ -123,9 +143,19 @@
                         </div>
                         <div class="card-text">
                             <h3>hamburguesas francesas</h3>
-                            <p>Carne 100 gramos, lechuga romana, tomate, cebolla asada, morron asado, cheddar</p>
+                            <div class="badge-container">
+                                <span class="badge">Carne</span>
+                                <span class="badge">Bacon</span>
+                                <span class="badge">Cebolla caramelizada</span>
+                                <span class="badge">Cheddar</span>
+                                <span class="badge">Berenjenas asadas</span>
+                                <span class="badge">Mayonesa de ajo</span>
+                                <span class="badge">Salsa barbacoa</span>
+                            </div>
                         </div>
-                        <button><a href="menu.html">ver mas</a></button>
+                        <button class="btn-style">
+                            <a href="menu.html" class="btn-link">Ver mas</a>
+                        </button>
                     </div>
                 </div>
                 <div class="col col-12 col-md-6 col-lg-4">
@@ -135,9 +165,21 @@
                         </div>
                         <div class="card-text">
                             <h3>hamburguesas americanas</h3>
-                            <p>Carne 100 gramos, lechuga romana, tomate, cebolla asada, morron asado, cheddar</p>
+                            <div class="badge-container">
+                                <span class="badge">Carne</span>
+                                <span class="badge">Tomate</span>
+                                <span class="badge">Lechuga</span>
+                                <span class="badge">Cebolla caramelizada</span>
+                                <span class="badge">Cheddar</span>
+                                <span class="badge">Huevo frito</span>
+                                <span class="badge">Bacon</span>
+                            </div>
+                            <div class="btn-container">
+                                <button class="btn-style">
+                                    <a href="menu.html" class="btn-link">Ver mas</a>
+                                </button>
+                            </div>
                         </div>
-                        <button><a href="menu.html">ver mas</a></button>
                     </div>
                 </div>
             </div>
@@ -146,143 +188,112 @@
 
 
     <!-- FOUND-US SECTION-->
-    <div id="found-us">
+    <section id="found-us">
         <div id="found-us-anchor"></div>
         <div class="container">
-            <button type="button" onclick="show(foundUsData)" class="m-0 p-3 border border-dark">VER SUCURSALES</button>
+            <button class="btn-style m-0 p-3 border border-dark" type="button" onclick="show(foundUsData)">VER
+                SUCURSALES</button>
         </div>
         <div class="row" id="found-us-data">
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="sucursales-container-img">
                     <img src="./resources/inicio/sucursal-img1.png" alt="burgui paternal" class="img-locales">
-                    <p class="texto" id="paternal">la paternal</p>
+                    <p id="paternal" class="text">paternal</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="sucursales-container-img">
                     <img src="./resources/inicio/sucursal-img2.png" alt="burgui palermo" class="img-locales">
-                    <p class="texto" id="palermo">palermo</p>
+                    <p id="palermo" class="text">palermo</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="sucursales-container-img">
                     <img src="./resources/inicio/sucursal-img3.png" alt="burgi la boca" class="img-locales">
-                    <p class="texto" id="laBoca">la boca</p>
+                    <p class="text" id="laBoca">la boca</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="sucursales-container-img">
                     <img src="./resources/inicio/sucursal-img4.png" alt="burgi devoto" class="img-locales">
-                    <p class="texto" id="devoto">devoto</p>
+                    <p class="text" id="devoto">Moreno</p>
                 </div>
             </div>
         </div>
+    </section>
 
 
-        <!-- COMENTS SECTION -->
-        <section id="coments">
-            <div class="coments-data">
-                <h4>nuestras reseñas</h4>
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="comentBody">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
-                                tempora
-                                ipsa
-                                perspiciatis animi voluptatum</p>
-                            <div class="container">
-                                <p class="m-0">-lorenzo olivera</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="comentBody">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
-                                tempora
-                                ipsa
-                                perspiciatis animi voluptatum</p>
-                            <div class="container">
-                                <p class="m-0">-barbara morales</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="comentBody">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
-                                tempora
-                                ipsa
-                                perspiciatis animi voluptatum</p>
-                            <div class="container">
-                                <p class="m-0">-enrique matias</p>
-                            </div>
+    <!-- COMENTS SECTION -->
+    <section id="coments">
+        <div class="coments-data">
+            <h4>nuestras reseñas</h4>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="coment-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
+                            tempora
+                            ipsa
+                            perspiciatis animi voluptatum</p>
+                        <div class="container">
+                            <img src="./resources/profile.png" class="profile-icon" alt="Profile icon">
+                            <p class="m-0 coment-name">-lorenzo olivera</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- #BEST BURGER BANNER -->
-        <div id="bestBurgerContainer">
-            <div class="container">
-                <h2>#best burgui</h2>
+                <div class="col-12 col-lg-4">
+                    <div class="coment-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
+                            tempora
+                            ipsa
+                            perspiciatis animi voluptatum</p>
+                        <div class="container">
+                            <img src="./resources/profile-2.png" class="profile-icon" alt="Profile icon">
+                            <p class="m-0 coment-name">-barbara morales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="coment-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
+                            tempora
+                            ipsa
+                            perspiciatis animi voluptatum</p>
+                        <div class="container">
+                            <img src="./resources/profile-3.png" class="profile-icon" alt="Profile icon">
+                            <p class="m-0 coment-name">-enrique matias</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- FOOTER -->
-        <footer id="footer">
-            <div class="social-media">
-                <div class="row">
-                    <div class="col-3 col-sm-4">
-                        <ul>
-                            <li>
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                                <a href="#">devoto</a>
-                            </li>
-                            <li>
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                                <a href="#">la paternal</a>
-                            </li>
-                            <li>
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                                <a href="#">palermo</a>
-                            </li>
-                            <li>
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                                <a href="#">belgrano</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-sm-4 d-flex justify-content-center align-items-center">
-                        <img src="./resources/burgui-footer.png" alt="" id="brand-footer">
-                    </div>
-                    <div class="col-3 col-sm-4">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                        <ion-icon name="logo-facebook"></ion-icon>
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </div>
-                </div>
+    </section>
+    <!-- #BEST BURGER -->
+    <div id="best-burger">
+        <img src="./resources/inicio/footer-img.jpg" class="best-burger-img" alt="Dos personas comiendo hamburguesa">
+        <h2>#Best Burgui</h2>
+    </div>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="social-media">
+            <a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+        <div class="copy-right">
+            <div class="row">
+                <span>Copyright © 2024. Diseño: Denis Carmona | Desarrollo: Federico Cáceres.</span>
             </div>
-
-            <div class="copy-right">
-                <div class="row">
-                    <span>Copyright © 2022. Todos los derechos reservados.
-                        Diseño: Denis Carmona | Desarrollo: Federico Cáceres.</span>
-                </div>
-            </div>
-        </footer>
-
-        <!-- IONICONS 5.52 -->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <!-- BOOTSTRAP SEPARATE 5.1 -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-        <!-- MAIN JS -->
-        <script src="./js/main.js"></script>
+        </div>
+    </footer>
+    <!-- IONICONS 5.52 -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- BOOTSTRAP SEPARATE 5.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
