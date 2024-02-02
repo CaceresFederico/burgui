@@ -32,7 +32,7 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   padding: 20% 0;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
@@ -57,6 +57,7 @@ p {
   max-width: 80vw;
   min-height: 10vh;
   max-height: 10vh;
+  padding: 0;
 }
 .nav-item {
   list-style: none;
@@ -103,7 +104,6 @@ p {
   z-index: 2;
 }
 .landing-page-header p {
-  display: flex;
   margin: 10px;
   font-size: 1.2rem;
 }
@@ -139,6 +139,7 @@ p {
 }
 .arrive-text-container p {
   padding-bottom: 20%;
+  text-align: justify;
 }
 #arrive > .container {
   padding: 0px;
@@ -217,7 +218,6 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 50vh;
 }
 .coments-data {
   margin: 0px auto;
@@ -226,7 +226,6 @@ p {
 }
 #coments .row {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 10vh;
 }
 .coment-body {
@@ -264,10 +263,9 @@ p {
 /* UTILS */
 .line {
   display: flex;
-  width: 100px;
+  width: 150px;
   margin: 0px auto;
   border-bottom: 1px solid white;
-  padding-bottom: 10px 0px;
 }
 
 /* CARDS */
@@ -356,7 +354,7 @@ p {
   align-items: center;
   font-size: 5rem;
   font-family: "Vujahday Script", cursive;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-align: center;
   color: var(--amarillo);
   min-height: 40vh;
@@ -408,3 +406,38 @@ p {
   padding: 10px;
 }
 /* MEDIA QUERYS */
+
+@media(min-width:768px){
+  h4{
+    padding: 10% 0;
+  }
+  .line{
+    width: 250px;
+    margin: 20px auto;
+  }
+  .arrive-text-container p {
+    padding-bottom: 10%;
+  }
+  .profile-icon{
+    max-width: 30%;
+  }
+  #best-burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #best-burger h2 {
+    font-size: 6rem;
+  }
+  .best-burger-img{
+    min-height: 60vh;
+    max-height: 60vh;
+    object-fit: cover;
+  }
+  .social-media ion-icon{
+    font-size: 2.5rem;
+  }
+  .copy-right span{
+    font-size: .8rem;
+  }
+}
