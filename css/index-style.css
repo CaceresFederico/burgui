@@ -269,13 +269,23 @@ p {
   margin: 0px auto;
   border-bottom: 1px solid white;
 }
+.medium-line-dark {
+  height: 2px;
+  width: 150px;
+  background-color: var(--negro);
+  margin: 0px 10px;
+}
+.medium-line-white {
+  height: 2px;
+  width: 150px;
+  background-color: white;
+  margin: 0px 10px;
+}
 
 /* CARDS */
 .cards-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* align-items: ; */
   margin: 0 auto;
 }
 .card-body {
@@ -360,7 +370,6 @@ p {
   align-items: center;
   font-size: 5rem;
   font-family: "Vujahday Script", cursive;
-  /* margin: 0 auto; */
   text-align: center;
   color: var(--amarillo);
   min-height: 40vh;
@@ -377,6 +386,24 @@ p {
   filter: brightness(0.35);
 }
 
+/* MENU SECTION */
+#menu-items {
+  display: flex;
+  flex-direction: column;
+}
+.menu-card {
+  display: flex;
+  justify-content: center;
+}
+.menu-card-img {
+  width: 200px;
+  height: 200px;
+}
+.menu-card-img img {
+  margin: 0px auto;
+  width: 200px;
+  height: 200px;
+}
 /* FOOTER */
 #footer {
   min-width: 100vw;
@@ -411,8 +438,8 @@ p {
   justify-content: center;
   padding: 10px;
 }
-/* MEDIA QUERYS */
 
+/* MEDIA QUERYS */
 @media (min-width: 768px) {
   h4 {
     padding: 10% 0;
