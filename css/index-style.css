@@ -65,12 +65,14 @@ p {
   font-weight: bold;
 }
 .nav-link {
-  font-size: .7rem;
+  font-size: 0.7rem;
   padding: 10px 5px;
   color: var(--negro);
 }
-.nav-link:hover {
-  color: var(--amarillo);
+.nav-link:hover,
+.nav-link:active,
+.nav-link:visited {
+  color: var(--negro);
 }
 #menu-icon {
   color: white;
@@ -272,8 +274,9 @@ p {
 .cards-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: ; */
+  margin: 0 auto;
 }
 .card-body {
   min-width: 80%;
@@ -282,7 +285,6 @@ p {
   border-radius: 15px;
   background-color: var(--negro);
   margin-bottom: 2rem;
-  border: 1px solid grey;
 }
 .card-img {
   background-position: center;
@@ -297,6 +299,10 @@ p {
 .card-img-container img {
   border-radius: 10px 10px 0px 0px;
   border-bottom: 1px solid var(--amarillo);
+}
+.card-text {
+  max-width: 90%;
+  margin: 0 auto;
 }
 .card-text > h3 {
   font-weight: bold;
@@ -393,7 +399,7 @@ p {
   color: white;
   background-color: var(--negro);
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 .copy-right .container {
   min-width: 100vw;
@@ -407,21 +413,37 @@ p {
 }
 /* MEDIA QUERYS */
 
-@media(min-width:768px){
-  h4{
+@media (min-width: 768px) {
+  h4 {
     padding: 10% 0;
   }
-  .line{
+  .line {
     width: 250px;
     margin: 20px auto;
   }
   .arrive-text-container p {
     padding-bottom: 10%;
   }
-  .profile-icon{
+  .cards-container .row {
+    min-width: 80vw;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .card-body {
+    min-width: 90%;
+    max-width: 90%;
+    gap: 20px;
+  }
+  .card-text {
+    min-height: 32vh;
+  }
+  .card-text h3 {
+    font-size: 1.5rem;
+  }
+  .profile-icon {
     max-width: 30%;
   }
-  #best-burger{
+  #best-burger {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,15 +451,65 @@ p {
   #best-burger h2 {
     font-size: 6rem;
   }
-  .best-burger-img{
+  .best-burger-img {
     min-height: 60vh;
     max-height: 60vh;
     object-fit: cover;
   }
-  .social-media ion-icon{
+  .social-media ion-icon {
     font-size: 2.5rem;
   }
-  .copy-right span{
-    font-size: .8rem;
+  .copy-right span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #menu-icon {
+    display: none;
+  }
+  #menu-content {
+    display: flex;
+  }
+  #brand-img {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .nav-link {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #landing-page h2 {
+    font-size: 4.5rem;
+  }
+  .landing-page-header p {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    min-height: 20vh;
+  }
+  .card-text h3 {
+    margin: 0 auto;
+    max-width: 80%;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav-link,
+  .copy-right span {
+    font-size: 1rem;
+  }
+  .card-text {
+    min-height: 25vh;
+    max-width: 90%;
+  }
+  .badge {
+    font-size: 0.9rem;
   }
 }
