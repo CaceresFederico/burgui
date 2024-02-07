@@ -29,18 +29,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Montserrat:wght@400;500;700&family=Rajdhani:wght@700&family=Vujahday+Script&display=swap"
         rel="stylesheet">
-    <!-- BOOTSTRAP CSS 5.1 -->
+    <!-- BOOTSTRAP CSS 5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index-style.css">
-    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/resources/icon.svg" type="image/x-icon">
     <title>Le Burgui</title>
 </head>
 
 <body>
-
-
     <!-- NAVIGATION -->
     <nav class="nav">
         <div id="navbar">
@@ -50,10 +48,10 @@
                 </div>
                 <ul id="menu-content">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">inicio</a>
+                        <a href="#landing-page" class="nav-link">inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#found-us-anchor" class="nav-link">sucursales</a>
+                        <a href="#found-us" class="nav-link">sucursales</a>
                     </li>
                     <li class="nav-item">
                         <a href="#menu" class="nav-link">menu</a>
@@ -77,7 +75,8 @@
                         <span class="line"></span>
                         <p>Hamburguesas caseras desde<b class="text-yellow">&nbsp1994</b></p>
                     </div>
-                    <img src="./resources/inicio/landing-1.webp" class="carousel-img" alt="...">
+                    <img src="./resources/inicio/landing-1-red.webp" class="carousel-img" alt="..." width="100"
+                        height="100">
                 </div>
                 <div class="carousel-item">
                     <div class="landing-page-header">
@@ -97,173 +96,178 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ARRIVE SECTION -->
-    <section id="arrive">
-        <div class="arrive-text-container">
-            <h4>le burgui has arrive</h4>
-            <p>En el corazón de cada hamburguesa se encuentra la calidad de nuestros ingredientes. Utilizamos solo las
-                carnes más jugosas y sabrosas, provenientes de fuentes confiables y responsables. Nuestros panes son
-                horneados a diario, proporcionando ese toque crujiente y suave que complementa perfectamente la
-                jugosidad de la carne. Además, nuestras salsas y aderezos son preparados en casa, garantizando un sabor
-                único y fresco en cada bocado.
-            </p>
-        </div>
-        <div class="cards-container">
-            <div class="row">
-                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-body">
-                        <div class="card-img-container">
-                            <img src="./resources/menu-burguers/Burger5.webp" alt="hamburguesa clasica" class="card-img">
-                        </div>
-                        <div class="card-text">
-                            <h3>hamburguesas clásicas</h3>
-                            <div class="badge-container">
-                                <span class="badge">Doble Carne</span>
-                                <span class="badge">Tomate</span>
-                                <span class="badge">Lechuga</span>
-                                <span class="badge">Cebolla</span>
-                                <span class="badge">Cheddar</span>
-                                <span class="badge">Pepinillos</span>
-                                <span class="badge">Salsa tasty</span>
-                            </div>
-                        </div>
-                        <button class="btn-style">
-                            <a href="#menu" class="btn-link">Ver mas</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-body">
-                        <div class="card-img-container">
-                            <img src="./resources/menu-burguers/Burger1.webp" alt="hamburguesa clasica" class="card-img">
-                        </div>
-                        <div class="card-text">
-                            <h3>hamburguesas francesas</h3>
-                            <div class="badge-container">
-                                <span class="badge">Carne</span>
-                                <span class="badge">Bacon</span>
-                                <span class="badge">Cheddar</span>
-                                <span class="badge">Pepinillos</span>
-                                <span class="badge">Mayonesa de ajo</span>
-                                <span class="badge">Barbacoa</span>
-                                <span class="badge">Cebolla caramelizada</span>
-                            </div>
-                        </div>
-                        <button class="btn-style">
-                            <a href="#menu" class="btn-link">Ver mas</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-body">
-                        <div class="card-img-container">
-                            <img src="./resources/menu-burguers/Burger6.webp" alt="hamburguesa clasica" class="card-img">
-                        </div>
-                        <div class="card-text">
-                            <h3>hamburguesas americanas</h3>
-                            <div class="badge-container">
-                                <span class="badge">Carne</span>
-                                <span class="badge">Tomate</span>
-                                <span class="badge">Lechuga</span>
-                                <span class="badge">Cheddar</span>
-                                <span class="badge">Huevo frito</span>
-                                <span class="badge">Bacon</span>
-                                <span class="badge">Cebolla caramelizada</span>
-                            </div>
-                        </div>
-                        <button class="btn-style">
-                            <a href="menu.html" class="btn-link">Ver mas</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- FOUND-US SECTION-->
-    <section id="found-us">
-        <div id="found-us-anchor"></div>
-        <div class="container">
-            <button class="btn-style m-0 p-3 border border-dark" type="button" onclick="show(foundUsData)">VER
-                SUCURSALES</button>
-        </div>
-        <div class="row" id="found-us-data">
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="sucursales-container-img">
-                    <img src="./resources/inicio/sucursal-img1.webp" alt="burgui paternal" class="img-locales">
-                    <p id="paternal" class="text">paternal</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="sucursales-container-img">
-                    <img src="./resources/inicio/sucursal-img2.webp" alt="burgui palermo" class="img-locales">
-                    <p id="palermo" class="text">palermo</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="sucursales-container-img">
-                    <img src="./resources/inicio/sucursal-img3.webp" alt="burgi la boca" class="img-locales">
-                    <p class="text" id="laBoca">la boca</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="sucursales-container-img">
-                    <img src="./resources/inicio/sucursal-img4.webp" alt="burgi devoto" class="img-locales">
-                    <p class="text" id="devoto">Moreno</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- COMENTS SECTION -->
-    <section id="coments">
-        <div class="coments-data">
-            <h4>nuestros comentarios</h4>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="coment-body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
-                            tempora
-                            ipsa
-                            perspiciatis animi voluptatum</p>
-                        <div class="container">
-                            <img src="./resources/profile.png" class="profile-icon" alt="Profile icon">
-                            <p class="m-0 coment-name">-lorenzo olivera</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="coment-body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
-                            tempora
-                            ipsa
-                            perspiciatis animi voluptatum</p>
-                        <div class="container">
-                            <img src="./resources/profile-2.png" class="profile-icon" alt="Profile icon">
-                            <p class="m-0 coment-name">-barbara morales</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-4">
-                    <div class="coment-body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
-                            tempora
-                            ipsa
-                            perspiciatis animi voluptatum</p>
-                        <div class="container">
-                            <img src="./resources/profile-3.png" class="profile-icon" alt="Profile icon">
-                            <p class="m-0 coment-name">-enrique matias</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- #BEST BURGER -->
-    <div id="best-burger">
-        <img src="./resources/inicio/footer-img.webp" class="best-burger-img" alt="Dos personas comiendo hamburguesa">
-        <h2>#Best Burgui</h2>
-    </div>
 
+        <!-- ARRIVE SECTION -->
+        <div id="arrive">
+            <div class="arrive-text-container">
+                <h4>le burgui has arrive</h4>
+                <p>En el corazón de cada hamburguesa se encuentra la calidad de nuestros ingredientes. Utilizamos solo
+                    las
+                    carnes más jugosas y sabrosas, provenientes de fuentes confiables y responsables. Nuestros panes son
+                    horneados a diario, proporcionando ese toque crujiente y suave que complementa perfectamente la
+                    jugosidad de la carne. Además, nuestras salsas y aderezos son preparados en casa, garantizando un
+                    sabor
+                    único y fresco en cada bocado.
+                </p>
+            </div>
+            <div class="cards-container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="card-body">
+                            <div class="card-img-container">
+                                <img src="./resources/menu-burguers/Burger5.webp" alt="hamburguesa clasica"
+                                    class="card-img">
+                            </div>
+                            <div class="card-text">
+                                <h3>hamburguesas clásicas</h3>
+                                <div class="badge-container">
+                                    <span class="badge">Doble Carne</span>
+                                    <span class="badge">Tomate</span>
+                                    <span class="badge">Lechuga</span>
+                                    <span class="badge">Cebolla</span>
+                                    <span class="badge">Cheddar</span>
+                                    <span class="badge">Pepinillos</span>
+                                    <span class="badge">Salsa tasty</span>
+                                </div>
+                            </div>
+                            <button class="btn-style">
+                                <a href="#menu" class="btn-link">Ver mas</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="card-body">
+                            <div class="card-img-container">
+                                <img src="./resources/menu-burguers/Burger1.webp" alt="hamburguesa clasica"
+                                    class="card-img">
+                            </div>
+                            <div class="card-text">
+                                <h3>hamburguesas francesas</h3>
+                                <div class="badge-container">
+                                    <span class="badge">Carne</span>
+                                    <span class="badge">Bacon</span>
+                                    <span class="badge">Cheddar</span>
+                                    <span class="badge">Pepinillos</span>
+                                    <span class="badge">Mayonesa de ajo</span>
+                                    <span class="badge">Barbacoa</span>
+                                    <span class="badge">Cebolla caramelizada</span>
+                                </div>
+                            </div>
+                            <button class="btn-style">
+                                <a href="#menu" class="btn-link">Ver mas</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="card-body">
+                            <div class="card-img-container">
+                                <img src="./resources/menu-burguers/Burger6.webp" alt="hamburguesa clasica"
+                                    class="card-img">
+                            </div>
+                            <div class="card-text">
+                                <h3>hamburguesas americanas</h3>
+                                <div class="badge-container">
+                                    <span class="badge">Carne</span>
+                                    <span class="badge">Tomate</span>
+                                    <span class="badge">Lechuga</span>
+                                    <span class="badge">Cheddar</span>
+                                    <span class="badge">Huevo frito</span>
+                                    <span class="badge">Bacon</span>
+                                    <span class="badge">Cebolla caramelizada</span>
+                                </div>
+                            </div>
+                            <button class="btn-style">
+                                <a href="#menu" class="btn-link">Ver mas</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOUND-US SECTION-->
+        <div id="found-us">
+            <div class="container">
+                <button class="btn-style m-0 p-3 border border-dark" type="button" onclick="show(foundUsData)">VER
+                    SUCURSALES</button>
+            </div>
+            <div class="row" id="found-us-data">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="sucursales-container-img">
+                        <img src="./resources/inicio/sucursal-img1.webp" alt="burgui paternal" class="img-locales">
+                        <p id="paternal" class="text">paternal</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="sucursales-container-img">
+                        <img src="./resources/inicio/sucursal-img2.webp" alt="burgui palermo" class="img-locales">
+                        <p id="palermo" class="text">palermo</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="sucursales-container-img">
+                        <img src="./resources/inicio/sucursal-img3.webp" alt="burgi la boca" class="img-locales">
+                        <p class="text" id="laBoca">la boca</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="sucursales-container-img">
+                        <img src="./resources/inicio/sucursal-img4.webp" alt="burgi devoto" class="img-locales">
+                        <p class="text" id="devoto">Moreno</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMENTS SECTION -->
+        <div id="coments">
+            <div class="coments-data">
+                <h4>nuestros comentarios</h4>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="coment-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
+                                tempora
+                                ipsa
+                                perspiciatis animi voluptatum</p>
+                            <div class="container">
+                                <img src="./resources/profile.png" class="profile-icon" alt="Profile icon">
+                                <p class="m-0 coment-name">-lorenzo olivera</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="coment-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
+                                tempora
+                                ipsa
+                                perspiciatis animi voluptatum</p>
+                            <div class="container">
+                                <img src="./resources/profile-2.png" class="profile-icon" alt="Profile icon">
+                                <p class="m-0 coment-name">-barbara morales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="coment-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus cum
+                                tempora
+                                ipsa
+                                perspiciatis animi voluptatum</p>
+                            <div class="container">
+                                <img src="./resources/profile-3.png" class="profile-icon" alt="Profile icon">
+                                <p class="m-0 coment-name">-enrique matias</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #BEST BURGER -->
+        <div id="best-burger">
+            <img src="./resources/inicio/footer-img.webp" class="best-burger-img"
+                alt="Dos personas comiendo hamburguesa">
+            <h2>#Best Burgui</h2>
+        </div>
+    </section>
 
     <!-- MENU PAGE -->
     <section id="menu">

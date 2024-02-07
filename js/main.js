@@ -1,8 +1,15 @@
+// SECTIONS
+const landingPage = document.getElementById("landing-page");
+const menuPage = document.getElementById("menu");
+const aboutPage = document.getElementById("about");
+// NAV CONTENT
+const menuContent = document.getElementById("menu-content");
+// SUCURSALES
 const paternal = document.getElementById("paternal");
 const palermo = document.getElementById("palermo");
 const laBoca = document.getElementById("laBoca");
 const devoto = document.getElementById("devoto");
-const menuContent = document.getElementById("menu-content");
+// SUCURSALES CONTENT SHOW
 const foundUsData = document.getElementById("found-us-data");
 
 // SHOW SUCURSALES INFORMATION
