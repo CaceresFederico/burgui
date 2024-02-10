@@ -1,7 +1,5 @@
-// SECTIONS
-const landingPage = document.getElementById("landing-page");
-const menuPage = document.getElementById("menu");
-const aboutPage = document.getElementById("about");
+
+const pages = document.getElementsByClassName("page");
 // NAV CONTENT
 const menuContent = document.getElementById("menu-content");
 // SUCURSALES
