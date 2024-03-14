@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -49,6 +49,7 @@ p {
   font-size: 1rem;
   text-align: center;
   text-wrap: balance;
+  line-height: 1.7rem;
 }
 
 /* NAV */
@@ -84,7 +85,7 @@ p {
   font-weight: bold;
 }
 .nav-link {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   color: var(--negro);
 }
 .nav-link:hover,
@@ -108,8 +109,8 @@ p {
   background-color: var(--amarillo);
 }
 #brand-img {
-  min-width: 4rem;
-  max-width: 6.5rem;
+  min-width: 150px;
+  max-width: 150px;
 }
 
 /* LANDING SECTION */
@@ -138,6 +139,7 @@ p {
   line-height: 4.5rem;
   text-wrap: balance;
 }
+
 /* CAROUSEL */
 .carousel-img {
   object-fit: cover;
@@ -170,23 +172,23 @@ p {
 
 /* FOUND US SECTION */
 #found-us {
-  position: relative;
-  color: WHITE;
+  color: white;
+}
+#found-us .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh auto;
+  font-weight: bold;
 }
 #found-us .btn-style {
   min-width: 250px;
+  margin: 0;
+  padding: 20px;
 }
 #found-us .btn-style:hover {
   background-color: var(--amarillo);
   color: var(--negro);
-}
-#found-us > .container {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
 }
 #found-us-data {
   display: none;
@@ -234,13 +236,12 @@ p {
   display: flex;
   align-items: center;
   background-image: url("../resources/inicio/clientes.webp");
-  min-width: 100%;
-  background-repeat: no-repeat;
+  /* min-width: 100%; */
+  /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: center;
 }
 .coments-data {
-
   margin: 0px auto;
   min-width: 80%;
   max-width: 80%;
@@ -265,7 +266,6 @@ p {
 }
 .profile-icon {
   max-width: 50%;
-  margin: 10%;
 }
 .coment-body .container {
   display: flex;
@@ -299,20 +299,22 @@ p {
   background-color: var(--negro);
 }
 
-
 /* CARDS */
 .cards-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
+.cards-container .col {
+  margin-bottom: 2rem;
+}
 .card-body {
   min-width: 80%;
   max-width: 80%;
+  height: 100%;
   margin: 0 auto;
   border-radius: 15px;
   background-color: var(--negro);
-  margin-bottom: 2rem;
 }
 .card-img {
   background-position: center;
@@ -333,21 +335,23 @@ p {
   margin: 0 auto;
 }
 .card-text > h3 {
+  color: white;
   font-weight: bold;
   padding: 10px;
-  color: var(--amarillo);
   text-transform: uppercase;
+  margin: 0;
 }
 .badge-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .badge {
   background-color: var(--amarillo);
   color: black;
   padding: 8px;
-  margin: 0.5rem;
+  margin: 0.3rem;
   font-size: 0.8rem;
 }
 .btn-style {
@@ -413,6 +417,9 @@ p {
   min-width: 100vw;
   max-width: 100vw;
 }
+.menu-tittle {
+  padding-bottom: 20%;
+}
 .menu-tittle .container {
   display: flex;
   flex-direction: column;
@@ -429,7 +436,7 @@ p {
 #menu .container:last-child {
   color: white;
 }
-.text-white{
+.text-white {
   color: white;
 }
 #menu h4 {
@@ -445,7 +452,7 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 10%;
+  margin-bottom: 30%;
 }
 .menu-card-img img {
   width: 250px;
@@ -455,7 +462,7 @@ p {
   object-fit: cover;
 }
 .menu-card h3 {
-  padding: 10% 0;
+  padding: 10% 0 0;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.7rem;
@@ -469,6 +476,7 @@ p {
   flex-direction: column;
   min-width: 100vw;
   max-width: 100vw;
+  border-top: 8px solid var(--amarillo);
 }
 #about-us-team {
   background-color: var(--negro);
@@ -528,25 +536,30 @@ p {
 #footer {
   min-width: 100vw;
   max-width: 100vw;
-  background-color: var(--amarillo);
+  background-color: var(--negro);
 }
 .social-media {
-  min-width: 80%;
-  max-width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
+  flex-direction: column;
+  z-index: 10;
   margin: 0 auto;
+  background-color: var(--amarillo);
 }
 .social-media ion-icon {
   color: var(--negro);
   font-size: 2rem;
+  padding: 10px;
 }
 .copy-right {
-  color: white;
-  background-color: var(--negro);
+  color: var(--negro);
+  background-color: var(--amarillo);
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  padding: 10px 0;
+  font-weight: bold;
 }
 .copy-right .container {
   min-width: 80vw;
@@ -563,6 +576,15 @@ p {
 @media (min-width: 768px) {
   h4 {
     padding: 10% 0;
+  }
+  #menu-icon {
+    display: none;
+  }
+  #menu-content {
+    display: flex;
+  }
+  .nav-link {
+    font-size: 0.8rem;
   }
   .line {
     width: 250px;
@@ -583,8 +605,12 @@ p {
   .card-text h3 {
     font-size: 1.5rem;
   }
-  .profile-icon {
-    max-width: 40%;
+  .menu-tittle {
+    padding: 0;
+  }
+  .menu-card-img img {
+    width: 280px;
+    height: 280px;
   }
   #best-burger {
     display: flex;
@@ -630,12 +656,7 @@ p {
   .landing-page-header p {
     font-size: 1.5rem;
   }
-  .card-text {
-    min-height: 20vh;
-  }
   .card-text h3 {
-    margin: 0 auto;
-    max-width: 80%;
     font-size: 1.5rem;
   }
   p {
@@ -665,5 +686,8 @@ p {
   }
   .badge {
     font-size: 0.9rem;
+  }
+    .badge-container {
+    min-height: 160px;
   }
 }
