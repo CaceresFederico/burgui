@@ -652,8 +652,8 @@ coments-container{
     padding: 0;
   }
   .menu-card-img img {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
   }
   #best-burger {
     display: flex;
