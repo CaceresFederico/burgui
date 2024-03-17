@@ -40,7 +40,7 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   padding: 20% 0;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0 auto;
 }
@@ -184,7 +184,7 @@ p {
   font-weight: bold;
 }
 #found-us .btn-style {
-  min-width: 250px;
+  min-width: 200px;
   margin: 0;
   padding: 20px;
 }
@@ -298,6 +298,9 @@ p {
 .border-black{
   border: 2px solid var(--negro);
 }
+.color-yellow{
+  color: var(--amarillo);
+}
 /* CARDS */
 .cards-container {
   display: flex;
@@ -343,6 +346,7 @@ coments-container{
   padding: 20px 0;
   text-transform: uppercase;
   margin: 0;
+  font-size: 1.2rem;
 }
 .badge-container {
   display: flex;
@@ -512,6 +516,9 @@ coments-container{
 .about-us-text{
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #about-landing {
   display: flex;
